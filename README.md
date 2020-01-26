@@ -1,6 +1,6 @@
 # Quote of the Day
 
-This is a little demo app that I made at the [Adventures in Flutter Meetup](https://www.meetup.com/Adventures-in-Flutter-Firebase). Contact me on [LinkedIn](www.linkedin.com/in/je-thompson).
+This is a little demo app that I made at the [Adventures in Flutter Meetup](https://www.meetup.com/Adventures-in-Flutter-Firebase). Contact me on [LinkedIn](https://www.linkedin.com/in/je-thompson).
 
 ![main screen](./docs/main.png)
 ![main screen](./docs/loading.png)
