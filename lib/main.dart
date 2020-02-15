@@ -2,7 +2,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:quote_of_the_day/pages/quote_of_the_day_page.dart';
+import 'package:quote_of_the_day/pages/animated_quote_of_the_day_page.dart';
+import 'package:quote_of_the_day/pages/quote_of_the_day_page_view_model.dart';
 
 import 'api/quotes_api.dart';
 
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: QuoteOfTheDayPage(),
+      home: AnimatedQuoteOfTheDayPage(),
     );
   }
 }

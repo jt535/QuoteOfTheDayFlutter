@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:quote_of_the_day/api/models/quote_response.dart';
 import 'package:quote_of_the_day/widgets/quote_details.dart';
 
+import 'fade_in_animation.dart';
+
 class FullQuoteDetails extends StatelessWidget {
   final QuoteResponse quoteResponse;
 
@@ -21,10 +23,12 @@ class FullQuoteDetails extends StatelessWidget {
             child: QuoteDetails(quoteOfTheDay: quoteResponse),
           )),
         ),
-        Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Text("Quote retrieved from taken from http://quotes.rest. Quote is © ${quoteResponse.contents.copyright}.",
-            style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic),),
+        FadeInAnimation(
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Text("Quote retrieved from taken from http://quotes.rest. Quote is © ${quoteResponse.contents.copyright}.",
+              style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic),),
+          ),
         ),
       ],
     );
